@@ -1,27 +1,25 @@
-# Speech2Text
+## Audio Transcription Project
+Last updated January 2018
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
+## Background
+Chatdesk provides Automated Tagging as a service to companies Chatdesk Treds We currently focus on
+text based customer support channels including SMS, email, chat, Facebook, Twitter, etc
 
-## Development server
+Some of our potential customers have requested Automated Tagging for phone service as well order to
+Receiver is, we will like need to transcribe the audio recordings to test before we run our regular tagging
+processes and machine learning models.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Transcribe Audio to Text
 
-## Code scaffolding
+Build a web interface where a user can upload an mp3 file-Sample file once the file is uploaded use a transcription service to convert the audio to text you can choose from one of the following transcription services (or any other better ones that you find
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+•	Some of the APIs only accept audio in small increments (e.g. 15 seconds, 2 minutes. As a result you
+•	May need to cuticle the uploaded audio into pieces in order for the transcription to work. However,
+•	You should probably avoid this it possible to reduce overhead and complexity
+•	Display the transcribed text to the user
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Evaluation
+Once you are complete. Send me a URL where I can try out your project
+Also send me your source code
+Do not spend any time on her of the web interface. This project is being judged on functionality not on U
+You can use any programming language, framework and server/hosting setup that you prefer you can use whatever is fastest for you and whichever is most comfortable
