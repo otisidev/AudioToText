@@ -25,3 +25,6 @@ Do not spend any time on her of the web interface. This project is being judged 
 You can use any programming language, framework and server/hosting setup that you prefer you can use whatever is fastest for you and whichever is most comfortable
 ## Demo
 Open the following link: http://audio-to-text.fr.openode.io/
+
+## Developed By
+@otisidev
