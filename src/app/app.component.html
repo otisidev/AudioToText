@@ -1,0 +1,47 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+    <div class="center-align">
+        <h2>
+            Welcome to {{title}}!
+        </h2>
+        <img width="120" src="https://is2-ssl.mzstatic.com/image/thumb/Purple128/v4/3e/b1/2b/3eb12bfe-db89-f662-9db8-a8875a2bd22e/AppIcon-1x_U007emarketing-85-220-0-6.png/246x0w.jpg">
+        <div class="row">
+            <div class="s8">
+                <div class="card large">
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="input-field col s8">
+                                <input #file accept="audio/*" id="file" (change)="onFile($event)" type="file" class="validate">
+                                <label class="active" for="file">Choose Audio File</label>
+                            </div>
+                            <div class="s4">
+                                <a (click)="transcript()" class="waves-effect waves-light btn">
+                                    <i class="material-icons right">cloud</i>Transcript</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="preloader-wrapper small active" *ngIf="loading">
+                                <div class="spinner-layer spinner-green-only">
+                                    <div class="circle-clipper left">
+                                        <div class="circle"></div>
+                                    </div>
+                                    <div class="gap-patch">
+                                        <div class="circle"></div>
+                                    </div>
+                                    <div class="circle-clipper right">
+                                        <div class="circle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div *ngIf='result' class="text-left">
+                            <h4>Result: </h4>
+                            <p class="flow-text">{{result}}</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,14 +1,15 @@
 {
   "name": "speech2-text",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve ",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "live": "ng build && node server.js"
   },
   "private": true,
   "dependencies": {
@@ -21,8 +22,12 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+    "body-parser": "^1.18.2",
     "core-js": "^2.4.1",
+    "express": "^4.16.3",
+    "multer": "^1.3.0",
     "rxjs": "^5.5.6",
+    "watson-developer-cloud": "^3.2.1",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
