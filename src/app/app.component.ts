@@ -42,7 +42,10 @@ this.result = '';
           this.result = item;
         }, (err) => {
           this.loading = false;
-          this.result = JSON.parse(err._body).message;
+          if (err._body) {
+             this.result = JSON.parse(err._body).message;
+          }
+          this.result =  'An error occurred, please try again later.';
           // console.log(JSON.stringify(JSON.parse(err._body), null, 2));
         });
     }
