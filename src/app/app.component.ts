@@ -26,7 +26,8 @@ export class AppComponent implements OnInit {
       'audio/mpeg',
       'audio/mulaw',
       'audio/ogg',
-      'audio/webm'
+      'audio/webm',
+      'audio/wav'
     ];
   }
 
@@ -57,7 +58,7 @@ export class AppComponent implements OnInit {
         },
         err => {
           this.loading = false;
-          if (err._body) {
+          if (err) {
             this.result = JSON.parse(err._body).message;
           }
           this.result = 'An error occurred, please try again later.';
