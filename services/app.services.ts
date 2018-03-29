@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Http } from '@angular/http';
+import 'rxjs/add/operator/catch';
+import 'rxjs/add/observable/throw';
 import 'rxjs/add/operator/map';
 
 @Injectable()
@@ -23,6 +25,9 @@ export class AppService {
         formData.append('file', file, filename);
 
         return this.http.post('/api/upload', formData, body)
-            .map(items => items.json());
-    }
+            .map(items => items.json())
+            .catch((e) => {
+                return Observable.throw(e);
+                });
+        }
 }

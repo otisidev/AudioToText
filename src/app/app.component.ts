@@ -42,7 +42,8 @@ this.result = '';
           this.result = item;
         }, (err) => {
           this.loading = false;
-          this.result = err;
+          this.result = JSON.parse(err._body).message;
+          // console.log(JSON.stringify(JSON.parse(err._body), null, 2));
         });
     }
   }
